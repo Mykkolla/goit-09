@@ -58,8 +58,8 @@ function createPromise(position, delay) {
 
 const form = document.querySelector('.form');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+function Event(e) {
+  e.preventDefault();
   const delay = parseInt(document.querySelector("input[name='delay']").value);
   const step = parseInt(document.querySelector("input[name='step']").value);
   const amount = parseInt(document.querySelector("input[name='amount']").value);
@@ -72,4 +72,6 @@ form.addEventListener('submit', (event) => {
         console.log(`Promise ${error.position} rejected with delay ${error.delay}`);
       });
   }
-});
+}
+
+form.addEventListener('submit', Event);

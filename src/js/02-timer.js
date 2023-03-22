@@ -46,7 +46,7 @@ const handleClickStart = () => {
         const distance = selectDate - now;
         // console.log(distance);
     const { days, hours, minutes, seconds } = convertMs(distance);
-    console.log(`${days}:${hours}:${minutes}:${seconds}`)
+    // console.log(`${days}:${hours}:${minutes}:${seconds}`)
     dayMain.textContent =`${days}`;
     hoursMain.textContent =`${hours}`;
     minutesMain.textContent =`${minutes}`;
